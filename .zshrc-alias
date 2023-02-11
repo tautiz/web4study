@@ -1,0 +1,7 @@
+alias ll='ls -la'
+alias ..='cd ..'
+
+alias art='php artisan'
+alias tinker='php artisan tinker'
+alias migrate='php artisan migrate'
+alias routes='php artisan route:list'
