@@ -21,9 +21,6 @@ RUN chsh -s $(which zsh)
 COPY .zshrc-alias /root/.zshrc-alias
 RUN sed -i '$ a\source /root/.zshrc-alias' ~/.zshrc
 
-# Install Composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public_html
 ENV APACHE_LOG_DIR /var/log/apache2
 ENV APACHE_RUN_USER web
